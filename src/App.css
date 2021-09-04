@@ -1,0 +1,33 @@
+.App {
+	text-align: center;
+	color: #fff;
+	background: #111;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.is-desktop-device .App {
+	min-height: 100vh;
+}
+
+.Datepicker {
+    position: relative;
+    margin: auto;
+}
+
+/* .is-mobile-device .Datepicker {
+    max-width: 667px;
+} */
+
+.is-desktop-device .Datepicker {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+* {
+	box-sizing: border-box;
+}
+

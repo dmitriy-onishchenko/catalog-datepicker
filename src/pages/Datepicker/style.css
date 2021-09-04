@@ -1,0 +1,13 @@
+.Datepicker {
+    position: relative;
+    margin: auto;
+}
+
+.is-mobile-device .Datepicker {
+    max-width: 667px;
+}
+
+.is-desktop-device .Datepicker {
+    display: inline-block;
+    padding-top: 10px;
+}

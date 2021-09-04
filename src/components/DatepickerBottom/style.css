@@ -1,0 +1,142 @@
+.Datepicker-bottom {
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    border-top: 1px solid #757575;
+    background: #111;
+}
+
+.is-mobile-device .Datepicker-bottom {
+    position: absolute;
+}
+
+.Datepicker-save {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 16px;
+    background: #50c878;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Datepicker-save:active,
+.is-desktop-device .Datepicker-save:hover {
+    background: rgba(80, 200, 120, 0.7);
+}
+
+.Timerange {
+    margin-bottom: 30px;
+    padding-right: 40px;
+}
+
+.Timerange-item {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.Timerange-item__title {
+    width: 105px;
+    text-align: left;
+    color: #999;
+    font-size: 14px;
+}
+
+.Timerange-item__slider {
+    flex: 1;
+}
+
+.Datepicker .irs--flat {
+    height: 2px;
+}
+
+.Datepicker .irs--flat .irs-line {
+    top: 0;
+    height: 2px;
+    background-color: #4e4e4e;
+    border-radius: 0;
+}
+
+.Datepicker .irs--flat .irs-bar {
+    top: 0;
+    height: 2px;
+    background-color: #999;
+}
+
+.Datepicker .irs--flat .irs-handle>i:first-child {
+    display: none;
+}
+
+.Datepicker .irs-from, .irs-to, .irs-single {
+    top: -9.5px;
+    z-index: 2;
+    color: #50c878;
+    border: 2px solid #50c878;
+    background: #111;
+}
+
+.Datepicker .irs--flat .irs-from, 
+.Datepicker .irs--flat .irs-to, 
+.Datepicker .irs--flat .irs-single {
+    top: -9.5px;
+    padding: 2.5px 15px;
+    border-radius: 8px;
+    color: #50c878;
+    background: #111;
+    font-size: 10.5px;
+}
+
+.Datepicker .irs--flat .irs-from:before, 
+.Datepicker .irs--flat .irs-to:before, 
+.Datepicker .irs--flat .irs-single:before {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Datepicker .irs--flat .irs-handle {
+    opacity: 0;
+    visibility: hidden;
+    top: -11px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #50c878;
+}
+
+.Datepicker .is-changing .irs--flat .irs-handle {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Datepicker .is-changing .irs-from, 
+.Datepicker .is-changing .irs-to, 
+.Datepicker .is-changing .irs-single {
+    top: -70px;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 70px;
+    margin-left: 1px;
+    padding: 8px 10px;
+    color: #fff;
+}
+
+.Datepicker .is-changing .irs--flat .irs-single:before {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    display: block;
+    bottom: -18px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin-left: -10px;
+    border: 9px solid transparent;
+    border-top-color: #50c878;
+}

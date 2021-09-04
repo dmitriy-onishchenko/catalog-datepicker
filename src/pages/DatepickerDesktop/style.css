@@ -1,0 +1,482 @@
+.is-mobile-device .DayPicker,
+.is-mobile-device .CalendarMonthGrid,
+.is-mobile-device .CalendarMonth {
+    background: #111;
+}
+
+.is-mobile-device .DayPicker_weekHeader__verticalScrollable {
+    background: #111;
+    border: 0;
+}
+
+.is-mobile-device .DayPicker_weekHeader_li {
+    font-weight: 700;
+}
+
+.is-mobile-device .CalendarMonth_caption__verticalScrollable {
+    padding: 15px 0;
+}
+
+.is-desktop-device .CalendarMonthGrid {
+    background: transparent;
+    z-index: 2;
+}
+
+.is-desktop-device .DayPickerNavigation {
+    z-index: inherit;
+}
+
+.is-desktop-device .CalendarDay {
+    pointer-events: auto;
+}
+
+.is-desktop-device .DayPickerNavigation_button {
+    z-index: 1;
+}
+
+.is-desktop-device .DayPicker_transitionContainer {
+    pointer-events: none;
+}
+
+.is-desktop-device .CalendarMonth {
+    background: transparent;
+}
+
+.DateRangePicker {
+    display: block;
+}
+
+.DateRangePickerInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+}
+
+.DateInput {
+    display: block;
+    width: auto;
+    min-width: 40%;
+    background: none;
+}
+
+.DateInput_input {
+    min-height: 65px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.DateInput_fang {
+    display: none;
+}
+
+.DateInput_input::-webkit-input-placeholder {
+    color: #fff;
+}
+.DateInput_input::-moz-placeholder {
+    color: #fff;
+}
+.DateInput_input:-ms-input-placeholder {
+    color: #fff;
+}
+.DateInput_input:-moz-placeholder {
+    color: #fff;
+}
+
+.DateInput_input__focused {
+    border-bottom-color: transparent;
+    background: none;
+}
+
+.DateRangePickerInput_arrow {
+    position: relative;
+    width: 15px;
+    height: 8px;
+    background: #fff;
+}
+
+.DateRangePickerInput_arrow::after {
+    content: "";
+    position: absolute;
+    right: -7px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 7px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.DateRangePickerInput_arrow_svg {
+    display: none;
+}
+
+.DayPicker_weekHeader_ul {
+    text-transform: uppercase;
+}
+
+.is-mobile-device .CalendarMonth_caption {
+    color: #666;
+}
+
+.is-mobile-device .CalendarDay__default {
+    padding: 1px 0;
+    border: 0 !important;
+    outline: 0 !important;
+    color: #fff;
+    background: #111;
+}
+
+.is-desktop-device .CalendarDay__default {
+    padding: 1px 0;
+    border: 0;
+}
+
+.is-mobile-device .CalendarDay__default:hover {
+    background: transparent;
+}
+
+.CalendarDay__item {
+    position: relative;
+    padding: 1px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 1px solid transparent;
+}
+
+.CalendarDay_tooltip {
+    align-items: center;
+    background: #50c878;
+    border-radius: 3px;
+    color: #fff;
+    display: flex;
+    font-size: 16px;
+    height: 53px;
+    justify-content: center;
+    min-width: 55px;
+    padding: 9px;
+    text-align: center;
+    top: -64px;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.CalendarDay_tooltip,
+.CalendarDay_tooltip::before {
+    border: 7px solid transparent;
+    border-top-color: #50c878;
+    border-bottom: 0;
+    bottom: -7px;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.CalendarDay__blocked_calendar {
+    background: #fff;
+    color: #cacccd !important;
+    cursor: default;
+    text-decoration: line-through;
+}
+
+.CalendarDay:hover:not(.CalendarDay__blocked_calendar):not(.CalendarDay__blocked_out_of_range) .CalendarDay_tooltip {
+    visibility: visible;
+}
+
+.is-desktop-device .CalendarDay__item {
+    height: 39px;
+}
+
+.is-desktop-device .DayPicker__horizontal {
+    padding-bottom: 10px;
+}
+
+.CalendarDay__selected, 
+.CalendarDay__selected:active, 
+.CalendarDay__selected:hover {
+    background: none;
+    color: black;
+    border: 0;
+}
+
+.is-mobile-device .CalendarDay__selected_span {
+    background: none;
+    color: black;
+    border: 0;
+    color: #fff;
+}
+
+.is-desktop-device .CalendarDay__selected_span {
+    background: none;
+    color: black;
+    border: 0;
+}
+
+.CalendarDay__selected_span .CalendarDay__item{
+    border-right-width: 0;
+    border-left-width: 0;
+    border-color: #50c878;
+}
+
+.is-mobile-device .CalendarDay__blocked_out_of_range, 
+.is-mobile-device .CalendarDay__blocked_out_of_range:active, 
+.is-mobile-device .CalendarDay__blocked_out_of_range:hover {
+    border: 0;
+    background: transparent;
+    color: #666;
+}
+
+.is-desktop-device .CalendarDay__blocked_out_of_range, 
+.is-desktop-device .CalendarDay__blocked_out_of_range:active, 
+.is-desktop-device .CalendarDay__blocked_out_of_range:hover {
+    border: 0;
+    background: transparent;
+}
+
+.is-mobile-device .CalendarDay__today.CalendarDay__blocked_out_of_range, 
+.is-mobile-device .CalendarDay__today.CalendarDay__blocked_out_of_range:active, 
+.is-mobile-device .CalendarDay__today.CalendarDay__blocked_out_of_range:hover {
+    color: #fff;
+}
+
+.is-desktop-device .CalendarDay__today.CalendarDay__blocked_out_of_range, 
+.is-desktop-device .CalendarDay__today.CalendarDay__blocked_out_of_range:active, 
+.is-desktop-device .CalendarDay__today.CalendarDay__blocked_out_of_range:hover {
+    color: #000;
+}
+
+.is-mobile-device .CalendarDay__selected .CalendarDay__item,
+.is-mobile-device .CalendarDay__selected:active .CalendarDay__item, 
+.is-mobile-device .CalendarDay__selected:hover .CalendarDay__item{
+    border-color: #50c878;
+    color: #fff;
+}
+
+.is-desktop-device .CalendarDay__selected .CalendarDay__item,
+.is-desktop-device .CalendarDay__selected:active .CalendarDay__item, 
+.is-desktop-device .CalendarDay__selected:hover .CalendarDay__item{
+    border-color: #50c878;
+    color: #000;
+}
+
+.CalendarDay__selected_start .CalendarDay__item {
+    border-right-width: 0 !important;
+    border-radius: 50px 0 0 50px;
+}
+
+.CalendarDay__selected_end .CalendarDay__item {
+    border-left-width: 0 !important;
+    border-radius: 0 50px 50px 0;
+}
+
+.is-mobile-device .CalendarMonth,
+.DayPicker_weekHeader__verticalScrollable {
+    padding: 0 !important;
+}
+
+.is-mobile-device .Datepicker-wrapp {
+    height: 500px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.is-selecting-start .CalendarDay__selected_start .CalendarDay__item {
+    border-right-width: 1px !important;
+    border-radius: 50%;
+}
+
+.is-desktop-device .CalendarDay__selected_start.CalendarDay__selected_start_in_hovered_span .CalendarDay__item {
+    border-right-width: 0 !important;
+    border-radius: 50px 0 0 50px;
+}
+
+.is-desktop-device .CalendarDay__selected_start.CalendarDay__selected_start_in_hovered_span.CalendarDay__selected_end .CalendarDay__item {
+    border-left-width: 1px !important;
+    border-right-width: 1px !important;
+    border-radius: 50%;
+}
+
+.CalendarDay__selected_start.CalendarDay__selected_end .CalendarDay__item {
+    border-left-width: 1px !important;
+    border-right-width: 1px !important;
+    border-radius: 50%;
+}
+
+.CalendarDay__selected_start.CalendarDay__selected_end .CalendarDay__item:after {
+    content: "";
+    position: absolute;
+    left: 50% !important;
+    top: 50%;
+    right: auto !important;
+    bottom: auto !important;
+    border-radius: 50%;
+    border: 1px solid #50c878;
+    display: block;
+    width: calc(100% - 9px);
+    height: calc(100% - 9px);
+    background: transparent !important;
+    transform: translate(-50%, -50%);
+}
+
+.is-desktop-device .CalendarDay__selected_start.CalendarDay__selected_end .CalendarDay__item:after {
+    width: calc(100% - 8px) !important;
+    height: calc(100% - 8px) !important;
+}
+
+.is-desktop-device .CalendarDay__selected_start.CalendarDay__selected_end .CalendarDay__item:before {
+    content: none !important;
+}
+
+.is-desktop-device .CalendarDay__default:not(.CalendarDay__blocked_calendar):hover {
+    color: #000;
+}
+
+.is-desktop-device .CalendarDay__default.CalendarDay__blocked_out_of_range:hover .CalendarDay__item{
+    color: #cacccd !important;
+}
+
+.is-desktop-device .CalendarDay__default:hover {
+    background: transparent;
+}
+
+.is-desktop-device .CalendarDay__default:not(.CalendarDay__blocked_out_of_range):not(.CalendarDay__blocked_calendar):hover .CalendarDay__item {
+    border-left-width: 1px !important;
+    border-right-width: 1px !important;
+    border-radius: 50%;
+    border-color: #50c878;
+}
+
+.is-desktop-device .CalendarDay__default:not(.CalendarDay__blocked_calendar):hover .CalendarDay__item {
+    color: #000;
+}
+
+.is-desktop-device .CalendarDay__selected_span:hover .CalendarDay__item:before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: calc(100% + 2px);
+    height: 1px;
+    background: #50c878;
+}
+
+.is-desktop-device .CalendarDay__selected_end:hover .CalendarDay__item:before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: calc(50% + 2px);
+    height: 1px;
+    background: #50c878;
+}
+
+.is-desktop-device .CalendarDay__selected_start:hover .CalendarDay__item:before {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: calc(50% + 2px);
+    height: 1px;
+    background: #50c878;
+}
+
+.is-desktop-device .CalendarDay__selected_span:hover .CalendarDay__item:after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    width: calc(100% + 2px);
+    height: 1px;
+    background: #50c878;
+}
+
+.is-desktop-device .CalendarDay__selected_end:hover .CalendarDay__item:after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    width: calc(50% + 2px);
+    height: 1px;
+    background: #50c878;
+}
+
+.is-desktop-device .CalendarDay__selected_start:hover .CalendarDay__item:after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: calc(50% + 2px);
+    height: 1px;
+    background: #50c878;
+}
+
+.is-desktop-device .CalendarDay__hovered_span, 
+.is-desktop-device .CalendarDay__hovered_span:hover {
+    background: transparent;
+    color: #000;
+}
+
+.is-desktop-device .CalendarDay__hovered_span .CalendarDay__item, 
+.is-desktop-device .CalendarDay__hovered_span:hover .CalendarDay__item {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-color: #50c878;
+}
+
+.is-desktop-device .CalendarDay__hovered_span:hover .CalendarDay__item {
+    border-left-color: transparent !important;
+    border-radius: 0 50% 50% 0 !important;
+}
+
+.is-desktop-device .CalendarDay__hovered_span:hover .CalendarDay__item:before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 2px;
+    height: 1px;
+    background: #50c878;
+}
+
+.is-desktop-device .CalendarDay__hovered_span:hover .CalendarDay__item:after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    width: 2px;
+    height: 1px;
+    background: #50c878;
+}
+
+.is-desktop-device .CalendarDay__hovered_span.CalendarDay__no_selected_start_before_selected_end:hover .CalendarDay__item {
+    border-left-color: #50c878 !important;
+    border-right-color: transparent !important;
+    border-radius: 50% 0 0 50% !important;
+}
+
+.is-desktop-device .CalendarDay__hovered_span.CalendarDay__no_selected_start_before_selected_end:hover .CalendarDay__item::before {
+    left: auto;
+    right: -1px;
+}
+
+.is-desktop-device .CalendarDay__hovered_span.CalendarDay__no_selected_start_before_selected_end:hover .CalendarDay__item::after {
+    left: auto;
+    right: -1px;
+}
+
+.is-desktop-device .CalendarDay__highlighted_calendar {
+    pointer-events: none !important;
+}
+
+.is-desktop-device .CalendarDay__highlighted_calendar {
+    background: transparent;
+}
